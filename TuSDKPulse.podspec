@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.platform            = :ios, '11.0'
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -ObjC', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
-  s.source              = { :git => 'https://github.com/TuSDK/TuSDKPulse-for-iOS.git', :tag => "#{spec.version}" }
+  s.source              = { :git => "https://github.com/TuSDK/TuSDKPulse-for-iOS.git", :tag => "#{s.version}" }
   s.requires_arc        = true
 
 
